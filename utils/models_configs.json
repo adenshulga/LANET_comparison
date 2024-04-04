@@ -1,0 +1,190 @@
+{
+    "TCMBN" : {
+        "DunnHumby" : {
+            "num_types":24,
+            "data": "tcmbn_data/dunnhumby/split_1/",
+            "n_head":6,
+            "n_layers":1,
+            "d_model" : 32,
+            "d_inner":16,
+            "d_k":16,
+            "d_v":16,
+            "ber_comps":64,
+            "gau_comps":64,
+            "dropout":0.1,
+            "lr":0.01
+        },
+        "Mimic3" : {
+            "num_types":169,
+            "data": "tcmbn_data/mimic3/split_1/",
+            "n_head":1,
+            "n_layers":1,
+            "d_model" : 64,
+            "d_inner":32,
+            "d_k":32,
+            "d_v":32,
+            "ber_comps":64,
+            "gau_comps":64,
+            "dropout":0.1,
+            "lr":0.0015
+        },
+        "mimic3_preprocessed" : {
+            "num_types":169,
+            "data": "tcmbn_data/mimic3_preprocessed/split_1/",
+            "n_head":1,
+            "n_layers":1,
+            "d_model" : 64,
+            "d_inner":32,
+            "d_k":32,
+            "d_v":32,
+            "ber_comps":64,
+            "gau_comps":64,
+            "dropout":0.1,
+            "lr":0.0015
+        },
+        "dunnhumby_preprocessed" : {
+            "num_types":24,
+            "data": "tcmbn_data/dunnhumby_preprocessed/split_1/",
+            "n_head": 4,
+            "n_layers":1,
+            "d_model" : 32,
+            "d_inner":16,
+            "d_k":16,
+            "d_v":16,
+            "ber_comps":32,
+            "gau_comps":32,
+            "dropout":0.1,
+            "lr":0.01
+        },
+        "defi_preprocessed" : {
+            "num_types":39,
+            "data": "tcmbn_data/defi_preprocessed/split_1/",
+            "n_head": 1,
+            "n_layers":1,
+            "d_model" : 32,
+            "d_inner":16,
+            "d_k":16,
+            "d_v":16,
+            "ber_comps":64,
+            "gau_comps":32,
+            "dropout":0.1,
+            "lr":6e-3
+        },
+        "synthea_preprocessed" : {
+            "num_types" : 232,
+            "data" : "tcmbn_data/synthea_preprocessed/split_1/",
+            "n_head" : 4,
+            "n_layers" : 1,
+            "d_model" : 16,
+            "d_inner" : 16,
+            "d_k" : 16,
+            "d_v" : 16,
+            "ber_comps" : 16,
+            "gau_comps" : 16,
+            "dropout" : 0.1,
+            "lr" : 2e-3
+        }
+    },
+
+    "LANET" : {
+        "DunnHumby" : {
+            "num_types" : 24,
+            "data": "tcmbn_data/dunnhumby/split_1/",
+            "emb_dim" : 128, 
+            "d_model" : 200, 
+            "nhead" : 4, 
+            "dim_feedforward" : 200, 
+            "dropout" : 0.2, 
+            "activation" : "relu", 
+            "batch_first" : true, 
+            "encoder_num_layers" : 2,
+            "layer_norm_eps" : 1e-5,
+            "bias" : true
+        },
+        "Mimic3" : {
+            "num_types" : 169,
+            "data": "tcmbn_data/mimic3/split_1/" 
+        },
+        "mimic3_preprocessed" : {
+            "num_types" : 169,
+            "data": "tcmbn_data/mimic3_preprocessed/split_1/" 
+        },
+        "dunnhumby_preprocessed" : {
+            "num_types" : 24,
+            "data": "tcmbn_data/dunnhumby_preprocessed/split_1/",
+            "emb_dim" : 32, 
+            "nhead" : 4, 
+            "dropout" : 0.1, 
+            "activation" : "relu", 
+            "batch_first" : true, 
+            "encoder_num_layers" : 1,
+            "layer_norm_eps" : 1e-5,
+            "bias" : true 
+        },
+        "defi_preprocessed" : {
+            "data": "tcmbn_data/defi_preprocessed/split_1/", 
+            "num_types" : 39,
+            "emb_dim" : 32, 
+            "nhead" : 1, 
+            "dropout" : 0.1, 
+            "activation" : "relu", 
+            "batch_first" : true, 
+            "encoder_num_layers" : 1,
+            "layer_norm_eps" : 1e-5,
+            "bias" : true,
+            "batch_size" : 32 
+        },
+        "synthea_preprocessed" : {
+            "data": "tcmbn_data/synthea_preprocessed/split_1/", 
+            "num_types" : 232,
+            "emb_dim" : 32, 
+            "nhead" : 4, 
+            "dropout" : 0.1, 
+            "activation" : "relu", 
+            "batch_first" : true, 
+            "encoder_num_layers" : 1,
+            "layer_norm_eps" : 1e-5,
+            "bias" : true,
+            "lr" : 2e-3 
+        }
+    },
+
+    "DNNTSP" : {
+        "defi_preprocessed" : {
+            "data": "tcmbn_data/defi_preprocessed/split_1/",
+            "num_types" : 39,
+            "item_embed_dim": 32,
+            "cuda": 0,
+            "loss_function": "multi_label_soft_loss",
+            "batch_size": 128,
+            "learning_rate": 0.001,
+            "weight_decay": 0,
+            "top_k": [5, 10]
+        },
+        "synthea_preprocessed" : {
+            "data": "tcmbn_data/synthea_preprocessed/split_1/",
+            "num_types" : 232,
+            "item_embed_dim": 96,
+            "cuda": 0,
+            "loss_function": "multi_label_soft_loss",
+            "learning_rate": 0.001,
+            "weight_decay": 0,
+            "top_k": [5, 10],
+            "batch_size": 32
+        }
+    },
+
+    "SFCNTSP" : {
+        "defi_preprocessed" : {
+            "data": "tcmbn_data/defi_preprocessed/split_1/",
+            "bias": false,
+            "embedding_channels": 64,
+            "dropout": 0.2,
+            "scheduler_t_max": 1000,
+            "lr" : 0.001,
+            "alpha": 1.0,
+            "beta": 0.1
+        }
+    }
+}
+

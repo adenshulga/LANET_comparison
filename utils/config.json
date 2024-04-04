@@ -1,0 +1,19 @@
+{
+    "seed": 0,
+    "device": 0,
+    "model_name": "DNNTSP",
+    "dataset_name": "synthea_preprocessed",
+    "cuda": 0,
+
+    "epoch": 200,
+    "patience": 30,
+    "lr": 0.01,
+    "batch_size" : 8,
+    "eps" : 1e-05,
+    "betas" : [0.9, 0.999],
+    "scheduler_step" : 10,
+    "gamma" : 0.9, 
+
+    "log": "log.txt"
+
+}
