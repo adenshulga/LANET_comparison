@@ -1,12 +1,15 @@
 {
     "seed": 0,
     "device": 0,
-    "model_name": "DNNTSP",
-    "dataset_name": "synthea_preprocessed",
+    "model_name":  "SFCNTSP",
+    "dataset_name": "mimic3_preprocessed",
     "cuda": 0,
 
-    "epoch": 200,
-    "patience": 30,
+    "epoch": 100,
+
+    "early_stop_thr" : 3e-5,
+
+    "patience": 15,
     "lr": 0.01,
     "batch_size" : 8,
     "eps" : 1e-05,

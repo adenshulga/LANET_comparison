@@ -9,8 +9,8 @@ from copy import copy
 # with open(abs_path) as file:
 #     config = json.load(file)
 
-config_dnntsp = copy(config)
-config_dnntsp.items_total = config.num_types
+
+config.items_total = config.num_types
 
 
 def get_attribute(name, default_value=None):
@@ -21,7 +21,7 @@ def get_attribute(name, default_value=None):
     :return:
     """
     try:
-        return getattr(config_dnntsp, name)
+        return getattr(config, name)
     except KeyError:
         return default_value
 

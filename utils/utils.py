@@ -26,3 +26,11 @@ def save_to_csv(y, type, opt):
 
     os.makedirs(path_to_save, exist_ok=True)
     np.savetxt(os.path.join(path_to_save, 'data.csv'), y.numpy(), delimiter=',')
+
+
+def append_to_txt(text: str):
+    file_path = 'utils/history.txt'
+
+    text = '\n' + text + '\n'
+    with open(file_path, 'a') as file:
+        file.write(text)

@@ -40,7 +40,8 @@
             "ber_comps":64,
             "gau_comps":64,
             "dropout":0.1,
-            "lr":0.0015
+            "lr":0.0015,
+            "batch_size" : 8
         },
         "dunnhumby_preprocessed" : {
             "num_types":24,
@@ -61,28 +62,30 @@
             "data": "tcmbn_data/defi_preprocessed/split_1/",
             "n_head": 1,
             "n_layers":1,
-            "d_model" : 32,
-            "d_inner":16,
-            "d_k":16,
-            "d_v":16,
-            "ber_comps":64,
-            "gau_comps":32,
+            "d_model" : 64,
+            "d_inner":32,
+            "d_k":32,
+            "d_v":32,
+            "ber_comps" : 64,
+            "gau_comps":64,
             "dropout":0.1,
-            "lr":6e-3
+            "lr":0.0015,
+            "batch_size" : 128
         },
         "synthea_preprocessed" : {
             "num_types" : 232,
             "data" : "tcmbn_data/synthea_preprocessed/split_1/",
-            "n_head" : 4,
+            "n_head" : 1,
             "n_layers" : 1,
-            "d_model" : 16,
+            "d_model" : 32,
             "d_inner" : 16,
             "d_k" : 16,
             "d_v" : 16,
-            "ber_comps" : 16,
-            "gau_comps" : 16,
+            "ber_comps" : 32,
+            "gau_comps" : 32,
             "dropout" : 0.1,
-            "lr" : 2e-3
+            "lr" : 2e-3,
+            "batch_size": 8
         }
     },
 
@@ -107,7 +110,18 @@
         },
         "mimic3_preprocessed" : {
             "num_types" : 169,
-            "data": "tcmbn_data/mimic3_preprocessed/split_1/" 
+            "data": "tcmbn_data/mimic3_preprocessed/split_1/",
+            "emb_dim" : 64, 
+            "nhead" : 4, 
+            "dropout" : 0.1, 
+            "activation" : "relu", 
+            "batch_first" : true, 
+            "encoder_num_layers" : 2,
+            "layer_norm_eps" : 1e-5,
+            "bias" : true,
+            "batch_size" : 8,
+            "lr" : 1e-3,
+            "epoch" : 20  
         },
         "dunnhumby_preprocessed" : {
             "num_types" : 24,
@@ -124,7 +138,7 @@
         "defi_preprocessed" : {
             "data": "tcmbn_data/defi_preprocessed/split_1/", 
             "num_types" : 39,
-            "emb_dim" : 32, 
+            "emb_dim" : 128, 
             "nhead" : 1, 
             "dropout" : 0.1, 
             "activation" : "relu", 
@@ -132,20 +146,24 @@
             "encoder_num_layers" : 1,
             "layer_norm_eps" : 1e-5,
             "bias" : true,
-            "batch_size" : 32 
+            "batch_size" : 32,
+            "lr" : 6e-3 
         },
         "synthea_preprocessed" : {
             "data": "tcmbn_data/synthea_preprocessed/split_1/", 
             "num_types" : 232,
-            "emb_dim" : 32, 
-            "nhead" : 4, 
+            "emb_dim" : 42, 
+            "nhead" : 6, 
             "dropout" : 0.1, 
             "activation" : "relu", 
             "batch_first" : true, 
-            "encoder_num_layers" : 1,
-            "layer_norm_eps" : 1e-5,
+            "encoder_num_layers" : 2,
+            "layer_norm_eps" : 2e-5,
             "bias" : true,
-            "lr" : 2e-3 
+            "lr" : 1e-3 ,
+            "batch_size" : 4,
+            "scheduler_step" : 15,
+            "epochs" : 70
         }
     },
 
@@ -153,10 +171,10 @@
         "defi_preprocessed" : {
             "data": "tcmbn_data/defi_preprocessed/split_1/",
             "num_types" : 39,
-            "item_embed_dim": 32,
+            "item_embed_dim": 128,
             "cuda": 0,
             "loss_function": "multi_label_soft_loss",
-            "batch_size": 128,
+            "batch_size": 32,
             "learning_rate": 0.001,
             "weight_decay": 0,
             "top_k": [5, 10]
@@ -164,13 +182,25 @@
         "synthea_preprocessed" : {
             "data": "tcmbn_data/synthea_preprocessed/split_1/",
             "num_types" : 232,
-            "item_embed_dim": 96,
+            "item_embed_dim": 128,
             "cuda": 0,
             "loss_function": "multi_label_soft_loss",
             "learning_rate": 0.001,
             "weight_decay": 0,
+            "top_k": [5, 10, 20],
+            "batch_size": 64
+        },
+        "mimic3_preprocessed" : {
+            "data": "tcmbn_data/mimic3_preprocessed/split_1/",
+            "num_types" : 169,
+            "item_embed_dim": 256,
+            "cuda": 0,
+            "loss_function": "multi_label_soft_loss",
+            "batch_size": 32,
+            "learning_rate": 0.001,
+            "weight_decay": 0,
             "top_k": [5, 10],
-            "batch_size": 32
+            "epoch" : 150
         }
     },
 
@@ -178,13 +208,39 @@
         "defi_preprocessed" : {
             "data": "tcmbn_data/defi_preprocessed/split_1/",
             "bias": false,
-            "embedding_channels": 64,
+            "embedding_channels": 128,
             "dropout": 0.2,
             "scheduler_t_max": 1000,
             "lr" : 0.001,
             "alpha": 1.0,
-            "beta": 0.1
+            "beta": 0.1,
+            "batch_size" : 64
+
+        },
+        "mimic3_preprocessed" : {
+            "data": "tcmbn_data/mimic3_preprocessed/split_1/",
+            "bias": false,
+            "embedding_channels": 384,
+            "dropout": 0.2,
+            "scheduler_t_max": 1000,
+            "lr" : 1e-3,
+            "alpha": 1.0,
+            "beta": 0.1,
+            "batch_size": 128,
+            "epoch" : 100
+        },
+        "synthea_preprocessed" : {
+            "data": "tcmbn_data/synthea_preprocessed/split_1/",
+            "bias": false,
+            "embedding_channels": 128,
+            "dropout": 0.2,
+            "scheduler_t_max": 1000,
+            "lr" : 0.001,
+            "alpha": 1.0,
+            "beta": 0.1,
+            "batch_size" : 16
         }
+
     }
 }
 

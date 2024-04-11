@@ -5,7 +5,8 @@ import torch.utils.data
 from ..transformer import Constants
 from typing import Any, List, Optional
 
-from utils.load_config import config
+from utils.load_config import config, Config
+# from Main import config
 
 class EventData(torch.utils.data.Dataset):
     """ Event stream dataset. """
@@ -47,6 +48,7 @@ def pad_type(insts):
     """ Pad the instance to the max seq length in batch. """
 
     max_len = max(len(inst) for inst in insts)
+
 
     
     batch_seq = np.array([

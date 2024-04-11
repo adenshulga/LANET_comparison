@@ -1,0 +1,2118 @@
+
+Evaluated model with following config: 
+ {'seed': '2' 
+, 'device': 'cuda:0' 
+, 'model_name': 'SFCNTSP' 
+, 'dataset_name': 'synthea_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '16' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'bias': 'False' 
+, 'embedding_channels': '128' 
+, 'dropout': '0.2' 
+, 'scheduler_t_max': '1000' 
+, 'alpha': '1.0' 
+, 'beta': '0.1' 
+, 'data_path': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'num_users': '1475' 
+, 'num_items': '232' 
+, 'max_seq_length': '398' 
+, 'model': 'SFCNTSP(
+  (dropout): Dropout(p=0.2, inplace=False)
+  (temporal_dependencies): TemporalDependencies(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=398, out_features=398, bias=False)
+  )
+  (element_relationships): ElementRelationships(
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (channel_correlations): ChannelCorrelations(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=128, out_features=128, bias=False)
+  )
+  (representations_fusing): RepresentationsFusing(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (projection): Linear(in_features=128, out_features=128, bias=True)
+    (leaky_relu_func): LeakyReLU(negative_slope=0.2)
+  )
+)' 
+}
+Evaluated model with following config: 
+ {'seed': '2' 
+, 'device': 'cuda:0' 
+, 'model_name': 'SFCNTSP' 
+, 'dataset_name': 'synthea_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '16' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'bias': 'False' 
+, 'embedding_channels': '128' 
+, 'dropout': '0.2' 
+, 'scheduler_t_max': '1000' 
+, 'alpha': '1.0' 
+, 'beta': '0.1' 
+, 'data_path': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'num_users': '1475' 
+, 'num_items': '232' 
+, 'max_seq_length': '398' 
+, 'model': 'SFCNTSP(
+  (dropout): Dropout(p=0.2, inplace=False)
+  (temporal_dependencies): TemporalDependencies(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=398, out_features=398, bias=False)
+  )
+  (element_relationships): ElementRelationships(
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (channel_correlations): ChannelCorrelations(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=128, out_features=128, bias=False)
+  )
+  (representations_fusing): RepresentationsFusing(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (projection): Linear(in_features=128, out_features=128, bias=True)
+    (leaky_relu_func): LeakyReLU(negative_slope=0.2)
+  )
+)' 
+}
+Evaluated model with following config: 
+ {'seed': '3' 
+, 'device': 'cuda:0' 
+, 'model_name': 'SFCNTSP' 
+, 'dataset_name': 'synthea_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '16' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'bias': 'False' 
+, 'embedding_channels': '128' 
+, 'dropout': '0.2' 
+, 'scheduler_t_max': '1000' 
+, 'alpha': '1.0' 
+, 'beta': '0.1' 
+, 'data_path': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'num_users': '1475' 
+, 'num_items': '232' 
+, 'max_seq_length': '398' 
+, 'model': 'SFCNTSP(
+  (dropout): Dropout(p=0.2, inplace=False)
+  (temporal_dependencies): TemporalDependencies(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=398, out_features=398, bias=False)
+  )
+  (element_relationships): ElementRelationships(
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (channel_correlations): ChannelCorrelations(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=128, out_features=128, bias=False)
+  )
+  (representations_fusing): RepresentationsFusing(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (projection): Linear(in_features=128, out_features=128, bias=True)
+    (leaky_relu_func): LeakyReLU(negative_slope=0.2)
+  )
+)' 
+}
+Evaluated model with following config: 
+ {'seed': '4' 
+, 'device': 'cuda:0' 
+, 'model_name': 'SFCNTSP' 
+, 'dataset_name': 'synthea_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '16' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'bias': 'False' 
+, 'embedding_channels': '128' 
+, 'dropout': '0.2' 
+, 'scheduler_t_max': '1000' 
+, 'alpha': '1.0' 
+, 'beta': '0.1' 
+, 'data_path': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'num_users': '1475' 
+, 'num_items': '232' 
+, 'max_seq_length': '398' 
+, 'model': 'SFCNTSP(
+  (dropout): Dropout(p=0.2, inplace=False)
+  (temporal_dependencies): TemporalDependencies(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=398, out_features=398, bias=False)
+  )
+  (element_relationships): ElementRelationships(
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (channel_correlations): ChannelCorrelations(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=128, out_features=128, bias=False)
+  )
+  (representations_fusing): RepresentationsFusing(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (projection): Linear(in_features=128, out_features=128, bias=True)
+    (leaky_relu_func): LeakyReLU(negative_slope=0.2)
+  )
+)' 
+}
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '3' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'synthea_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '4' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '15' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'num_types': '232' 
+, 'emb_dim': '42' 
+, 'nhead': '6' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '2e-05' 
+, 'bias': 'True' 
+, 'epochs': '70' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(232, 42)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=84, out_features=84, bias=True)
+    )
+    (linear1): Linear(in_features=84, out_features=84, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=84, out_features=84, bias=True)
+    (norm1): LayerNorm((84,), eps=2e-05, elementwise_affine=True)
+    (norm2): LayerNorm((84,), eps=2e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=84, out_features=84, bias=True)
+        )
+        (linear1): Linear(in_features=84, out_features=84, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=84, out_features=84, bias=True)
+        (norm1): LayerNorm((84,), eps=2e-05, elementwise_affine=True)
+        (norm2): LayerNorm((84,), eps=2e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=84, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 139357
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '3' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'synthea_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '4' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '15' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'num_types': '232' 
+, 'emb_dim': '42' 
+, 'nhead': '6' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '2e-05' 
+, 'bias': 'True' 
+, 'epochs': '70' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(232, 42)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=84, out_features=84, bias=True)
+    )
+    (linear1): Linear(in_features=84, out_features=84, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=84, out_features=84, bias=True)
+    (norm1): LayerNorm((84,), eps=2e-05, elementwise_affine=True)
+    (norm2): LayerNorm((84,), eps=2e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=84, out_features=84, bias=True)
+        )
+        (linear1): Linear(in_features=84, out_features=84, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=84, out_features=84, bias=True)
+        (norm1): LayerNorm((84,), eps=2e-05, elementwise_affine=True)
+        (norm2): LayerNorm((84,), eps=2e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=84, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 139357
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '3' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'synthea_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.002' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'num_types': '232' 
+, 'emb_dim': '42' 
+, 'nhead': '6' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '2e-05' 
+, 'bias': 'True' 
+, 'epochs': '70' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=232, out_features=64, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=64, out_features=128, bias=False)
+          (w_ks): Linear(in_features=64, out_features=128, bias=False)
+          (w_vs): Linear(in_features=64, out_features=128, bias=False)
+          (fc): Linear(in_features=128, out_features=64, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=64, out_features=32, bias=True)
+          (w_2): Linear(in_features=32, out_features=64, bias=True)
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=14848, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+, 'n_head': '4' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+}
+
+Number of parameters: 1029728
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '3' 
+, 'device': 'cuda:0' 
+, 'model_name': 'DNNTSP' 
+, 'dataset_name': 'synthea_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.01' 
+, 'batch_size': '64' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'num_types': '232' 
+, 'emb_dim': '42' 
+, 'nhead': '6' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '2e-05' 
+, 'bias': 'True' 
+, 'epochs': '70' 
+, 'model': 'temporal_set_prediction(
+  (item_embedding): Embedding(232, 128)
+  (stacked_gcn): stacked_weighted_GCN_blocks(
+    (0): weighted_GCN(
+      (gcns): ModuleList(
+        (0-1): 2 x weighted_graph_conv(
+          (linear): Linear(in_features=128, out_features=128, bias=True)
+        )
+      )
+      (relus): ModuleList(
+        (0-1): 2 x ReLU()
+      )
+      (bns): ModuleList(
+        (0-1): 2 x BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (masked_self_attention): masked_self_attention(
+    (Wq): Linear(in_features=128, out_features=128, bias=False)
+    (Wk): Linear(in_features=128, out_features=128, bias=False)
+    (Wv): Linear(in_features=128, out_features=128, bias=False)
+  )
+  (aggregate_nodes_temporal_feature): aggregate_nodes_temporal_feature(
+    (Wq): Linear(in_features=128, out_features=1, bias=False)
+  )
+  (global_gated_update): global_gated_update(
+    (item_embedding): Embedding(232, 128)
+  )
+  (fc_output): Linear(in_features=128, out_features=1, bias=True)
+)' 
+, 'n_head': '4' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+, 'item_embed_dim': '128' 
+, 'loss_function': 'multi_label_soft_loss' 
+, 'learning_rate': '0.001' 
+, 'weight_decay': '0' 
+, 'top_k': '[5, 10, 20]' 
+, 'items_total': '232' 
+}
+
+Number of parameters: 112873
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '3' 
+, 'device': 'cuda:0' 
+, 'model_name': 'SFCNTSP' 
+, 'dataset_name': 'synthea_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '16' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'num_types': '232' 
+, 'emb_dim': '42' 
+, 'nhead': '6' 
+, 'dropout': '0.2' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '2e-05' 
+, 'bias': 'False' 
+, 'epochs': '70' 
+, 'model': 'SFCNTSP(
+  (dropout): Dropout(p=0.2, inplace=False)
+  (temporal_dependencies): TemporalDependencies(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=398, out_features=398, bias=False)
+  )
+  (element_relationships): ElementRelationships(
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (channel_correlations): ChannelCorrelations(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=128, out_features=128, bias=False)
+  )
+  (representations_fusing): RepresentationsFusing(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (projection): Linear(in_features=128, out_features=128, bias=True)
+    (leaky_relu_func): LeakyReLU(negative_slope=0.2)
+  )
+)' 
+, 'n_head': '4' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+, 'item_embed_dim': '128' 
+, 'loss_function': 'multi_label_soft_loss' 
+, 'learning_rate': '0.001' 
+, 'weight_decay': '0' 
+, 'top_k': '[5, 10, 20]' 
+, 'items_total': '232' 
+, 'embedding_channels': '128' 
+, 'scheduler_t_max': '1000' 
+, 'alpha': '1.0' 
+, 'beta': '0.1' 
+, 'data_path': 'tcmbn_data/synthea_preprocessed/split_1/' 
+, 'num_users': '1475' 
+, 'num_items': '232' 
+, 'max_seq_length': '398' 
+}
+
+Number of parameters: 220996
+
+---------------------------------------
+
+{'seed': '2' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'defi_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '32' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/defi_preprocessed/split_1/' 
+, 'num_types': '39' 
+, 'emb_dim': '32' 
+, 'nhead': '8' 
+, 'dropout': '0.3' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(39, 32)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+    )
+    (linear1): Linear(in_features=64, out_features=64, bias=True)
+    (dropout): Dropout(p=0.3, inplace=False)
+    (linear2): Linear(in_features=64, out_features=64, bias=True)
+    (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.3, inplace=False)
+    (dropout2): Dropout(p=0.3, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.3, inplace=False)
+        (linear2): Linear(in_features=64, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.3, inplace=False)
+        (dropout2): Dropout(p=0.3, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=64, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 76961
+
+Best validation roc auc on train: 0.813785729827754
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '2' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'defi_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '32' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/defi_preprocessed/split_1/' 
+, 'num_types': '39' 
+, 'emb_dim': '32' 
+, 'nhead': '8' 
+, 'dropout': '0.3' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(39, 32)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+    )
+    (linear1): Linear(in_features=64, out_features=64, bias=True)
+    (dropout): Dropout(p=0.3, inplace=False)
+    (linear2): Linear(in_features=64, out_features=64, bias=True)
+    (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.3, inplace=False)
+    (dropout2): Dropout(p=0.3, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=64, bias=True)
+        (dropout): Dropout(p=0.3, inplace=False)
+        (linear2): Linear(in_features=64, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.3, inplace=False)
+        (dropout2): Dropout(p=0.3, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=64, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 76961
+
+---------------------------------------
+
+{'seed': '0' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'defi_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.006' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '39' 
+, 'data': 'tcmbn_data/defi_preprocessed/split_1/' 
+, 'n_head': '1' 
+, 'n_layers': '1' 
+, 'd_model': '32' 
+, 'd_inner': '16' 
+, 'd_k': '16' 
+, 'd_v': '16' 
+, 'ber_comps': '64' 
+, 'gau_comps': '32' 
+, 'dropout': '0.1' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=39, out_features=32, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=32, out_features=16, bias=False)
+          (w_ks): Linear(in_features=32, out_features=16, bias=False)
+          (w_vs): Linear(in_features=32, out_features=16, bias=False)
+          (fc): Linear(in_features=16, out_features=32, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((32,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=32, out_features=16, bias=True)
+          (w_2): Linear(in_features=16, out_features=32, bias=True)
+          (layer_norm): LayerNorm((32,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=32, out_features=32, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=32, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=32, out_features=32, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=32, out_features=2496, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+}
+
+Number of parameters: 91120
+
+Best validation roc auc on train: 0.8795704966371751
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '0' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'defi_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.006' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '39' 
+, 'data': 'tcmbn_data/defi_preprocessed/split_1/' 
+, 'n_head': '1' 
+, 'n_layers': '1' 
+, 'd_model': '32' 
+, 'd_inner': '16' 
+, 'd_k': '16' 
+, 'd_v': '16' 
+, 'ber_comps': '64' 
+, 'gau_comps': '32' 
+, 'dropout': '0.1' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=39, out_features=32, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=32, out_features=16, bias=False)
+          (w_ks): Linear(in_features=32, out_features=16, bias=False)
+          (w_vs): Linear(in_features=32, out_features=16, bias=False)
+          (fc): Linear(in_features=16, out_features=32, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((32,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=32, out_features=16, bias=True)
+          (w_2): Linear(in_features=16, out_features=32, bias=True)
+          (layer_norm): LayerNorm((32,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=32, out_features=32, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=32, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=32, out_features=32, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=32, out_features=2496, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+}
+
+Number of parameters: 91120
+
+---------------------------------------
+
+{'seed': '0' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '20' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(169, 64)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (linear1): Linear(in_features=128, out_features=128, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=128, out_features=128, bias=True)
+    (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+        )
+        (linear1): Linear(in_features=128, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=128, bias=True)
+        (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=128, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 309697
+
+Best validation roc auc on train: 0.972608004018651
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '0' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '20' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(169, 64)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (linear1): Linear(in_features=128, out_features=128, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=128, out_features=128, bias=True)
+    (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+        )
+        (linear1): Linear(in_features=128, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=128, bias=True)
+        (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=128, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 309697
+
+---------------------------------------
+
+{'seed': '0' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.0015' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'n_head': '1' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+, 'dropout': '0.1' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=169, out_features=64, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=64, out_features=32, bias=False)
+          (w_ks): Linear(in_features=64, out_features=32, bias=False)
+          (w_vs): Linear(in_features=64, out_features=32, bias=False)
+          (fc): Linear(in_features=32, out_features=64, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=64, out_features=32, bias=True)
+          (w_2): Linear(in_features=32, out_features=64, bias=True)
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=10816, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+}
+
+Number of parameters: 739040
+
+Best validation roc auc on train: 0.8485909316209472
+
+---------------------------------------
+
+{'seed': '1' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '20' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(169, 64)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (linear1): Linear(in_features=128, out_features=128, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=128, out_features=128, bias=True)
+    (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+        )
+        (linear1): Linear(in_features=128, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=128, bias=True)
+        (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=128, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 309697
+
+Best validation roc auc on train: 0.9728776302548694
+
+---------------------------------------
+
+{'seed': '2' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '20' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(169, 64)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (linear1): Linear(in_features=128, out_features=128, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=128, out_features=128, bias=True)
+    (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+        )
+        (linear1): Linear(in_features=128, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=128, bias=True)
+        (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=128, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 309697
+
+Best validation roc auc on train: 0.9730943763205823
+
+---------------------------------------
+
+{'seed': '3' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '20' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(169, 64)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (linear1): Linear(in_features=128, out_features=128, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=128, out_features=128, bias=True)
+    (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+        )
+        (linear1): Linear(in_features=128, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=128, bias=True)
+        (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=128, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 309697
+
+Best validation roc auc on train: 0.9721194596332801
+
+---------------------------------------
+
+{'seed': '1' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.0015' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=169, out_features=64, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=64, out_features=32, bias=False)
+          (w_ks): Linear(in_features=64, out_features=32, bias=False)
+          (w_vs): Linear(in_features=64, out_features=32, bias=False)
+          (fc): Linear(in_features=32, out_features=64, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=64, out_features=32, bias=True)
+          (w_2): Linear(in_features=32, out_features=64, bias=True)
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=10816, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+, 'n_head': '1' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+}
+
+Number of parameters: 739040
+
+Best validation roc auc on train: 0.8737384703704544
+
+---------------------------------------
+
+{'seed': '2' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.0015' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=169, out_features=64, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=64, out_features=32, bias=False)
+          (w_ks): Linear(in_features=64, out_features=32, bias=False)
+          (w_vs): Linear(in_features=64, out_features=32, bias=False)
+          (fc): Linear(in_features=32, out_features=64, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=64, out_features=32, bias=True)
+          (w_2): Linear(in_features=32, out_features=64, bias=True)
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=10816, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+, 'n_head': '1' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+}
+
+Number of parameters: 739040
+
+Best validation roc auc on train: 0.8722793276172164
+
+---------------------------------------
+
+{'seed': '3' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.0015' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=169, out_features=64, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=64, out_features=32, bias=False)
+          (w_ks): Linear(in_features=64, out_features=32, bias=False)
+          (w_vs): Linear(in_features=64, out_features=32, bias=False)
+          (fc): Linear(in_features=32, out_features=64, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=64, out_features=32, bias=True)
+          (w_2): Linear(in_features=32, out_features=64, bias=True)
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=10816, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+, 'n_head': '1' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+}
+
+Number of parameters: 739040
+
+Best validation roc auc on train: 0.8693417862905244
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '0' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '20' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(169, 64)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (linear1): Linear(in_features=128, out_features=128, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=128, out_features=128, bias=True)
+    (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+        )
+        (linear1): Linear(in_features=128, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=128, bias=True)
+        (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=128, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 309697
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '1' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '20' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(169, 64)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (linear1): Linear(in_features=128, out_features=128, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=128, out_features=128, bias=True)
+    (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+        )
+        (linear1): Linear(in_features=128, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=128, bias=True)
+        (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=128, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 309697
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '2' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '20' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(169, 64)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (linear1): Linear(in_features=128, out_features=128, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=128, out_features=128, bias=True)
+    (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+        )
+        (linear1): Linear(in_features=128, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=128, bias=True)
+        (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=128, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 309697
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '3' 
+, 'device': 'cuda:0' 
+, 'model_name': 'LANET' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '20' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'TransformerEncoder(
+  (cat_embedding): Embedding(169, 64)
+  (encoder_layer): TransformerEncoderLayer(
+    (self_attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (linear1): Linear(in_features=128, out_features=128, bias=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+    (linear2): Linear(in_features=128, out_features=128, bias=True)
+    (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (dropout1): Dropout(p=0.1, inplace=False)
+    (dropout2): Dropout(p=0.1, inplace=False)
+  )
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+        )
+        (linear1): Linear(in_features=128, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=128, bias=True)
+        (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (dropout): Dropout(p=0.3, inplace=False)
+  (encoder_history): Linear(in_features=128, out_features=1, bias=True)
+  (sigmoid): Sigmoid()
+)' 
+}
+
+Number of parameters: 309697
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '0' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.0015' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=169, out_features=64, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=64, out_features=32, bias=False)
+          (w_ks): Linear(in_features=64, out_features=32, bias=False)
+          (w_vs): Linear(in_features=64, out_features=32, bias=False)
+          (fc): Linear(in_features=32, out_features=64, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=64, out_features=32, bias=True)
+          (w_2): Linear(in_features=32, out_features=64, bias=True)
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=10816, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+, 'n_head': '1' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+}
+
+Number of parameters: 739040
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '1' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.0015' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=169, out_features=64, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=64, out_features=32, bias=False)
+          (w_ks): Linear(in_features=64, out_features=32, bias=False)
+          (w_vs): Linear(in_features=64, out_features=32, bias=False)
+          (fc): Linear(in_features=32, out_features=64, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=64, out_features=32, bias=True)
+          (w_2): Linear(in_features=32, out_features=64, bias=True)
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=10816, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+, 'n_head': '1' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+}
+
+Number of parameters: 739040
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '2' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.0015' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=169, out_features=64, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=64, out_features=32, bias=False)
+          (w_ks): Linear(in_features=64, out_features=32, bias=False)
+          (w_vs): Linear(in_features=64, out_features=32, bias=False)
+          (fc): Linear(in_features=32, out_features=64, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=64, out_features=32, bias=True)
+          (w_2): Linear(in_features=32, out_features=64, bias=True)
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=10816, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+, 'n_head': '1' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+}
+
+Number of parameters: 739040
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '3' 
+, 'device': 'cuda:0' 
+, 'model_name': 'TCMBN' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.0015' 
+, 'batch_size': '8' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'num_types': '169' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'emb_dim': '64' 
+, 'nhead': '4' 
+, 'dropout': '0.1' 
+, 'activation': 'relu' 
+, 'batch_first': 'True' 
+, 'encoder_num_layers': '2' 
+, 'layer_norm_eps': '1e-05' 
+, 'bias': 'True' 
+, 'model': 'Transformer(
+  (encoder): Encoder(
+    (event_emb): Linear(in_features=169, out_features=64, bias=False)
+    (layer_stack): ModuleList(
+      (0): EncoderLayer(
+        (slf_attn): MultiHeadAttention(
+          (w_qs): Linear(in_features=64, out_features=32, bias=False)
+          (w_ks): Linear(in_features=64, out_features=32, bias=False)
+          (w_vs): Linear(in_features=64, out_features=32, bias=False)
+          (fc): Linear(in_features=32, out_features=64, bias=True)
+          (attention): ScaledDotProductAttention(
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (pos_ffn): PositionwiseFeedForward(
+          (w_1): Linear(in_features=64, out_features=32, bias=True)
+          (w_2): Linear(in_features=32, out_features=64, bias=True)
+          (layer_norm): LayerNorm((64,), eps=1e-06, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+  )
+  (MBN): MixtureBernoulliNetwork(
+    (pi_network): CategoricalNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=64, bias=True)
+      )
+    )
+    (bernoulli_network): BernoulliNetwork(
+      (network): Sequential(
+        (0): Linear(in_features=64, out_features=64, bias=True)
+        (1): ELU(alpha=1.0)
+        (2): Linear(in_features=64, out_features=10816, bias=True)
+        (3): Sigmoid()
+      )
+    )
+  )
+)' 
+, 'n_head': '1' 
+, 'n_layers': '1' 
+, 'd_model': '64' 
+, 'd_inner': '32' 
+, 'd_k': '32' 
+, 'd_v': '32' 
+, 'ber_comps': '64' 
+, 'gau_comps': '64' 
+}
+
+Number of parameters: 739040

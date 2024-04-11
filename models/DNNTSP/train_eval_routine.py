@@ -46,6 +46,8 @@ def eval_epoch(model, validation_data, opt):
     loss_func = nn.MultiLabelSoftMarginLoss(reduction="mean")
     loss_func = convert_to_gpu(loss_func)
 
+    s = np.zeros(232)
+
     with torch.no_grad():
         for batch in tqdm(validation_data, mininterval=2,
                           desc='  - (Validation) ', leave=False):
@@ -59,7 +61,11 @@ def eval_epoch(model, validation_data, opt):
             pred_label.append(output.detach().cpu())
             true_label.append(truth_data.detach().cpu())
 
+            # print(truth_data.detach().cpu().sum(axis=0))
+
             total_ll += loss.cpu().data.numpy()
+
+        # print(s)
 
         true_label = torch.cat(true_label, dim=0)
         pred_label = torch.cat(pred_label, dim=0)
@@ -88,6 +94,8 @@ def evaluate(model, dataloader, opt, type) -> None:
 
             predict_data = model(g, nodes_feature, edges_weight, lengths, nodes, users_frequency)
 
+            # print(truth_data.sum(axis=0))
+            # print(predict_data)
             # predict_data shape (batch_size, baskets_num, items_total)
             # truth_data shape (batch_size, baskets_num, items_total)
             y_pred.append(predict_data.detach().cpu())
@@ -95,6 +103,8 @@ def evaluate(model, dataloader, opt, type) -> None:
 
         y_pred = torch.cat(y_pred, dim=0)
         y_true = torch.cat(y_true, dim=0)
+
+        print(y_true.sum(axis=0))
 
         save_to_csv(y_pred, f'pred_{type}', opt)
         save_to_csv(y_true, f'gt_{type}', opt)

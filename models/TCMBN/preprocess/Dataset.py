@@ -5,7 +5,8 @@ import torch.utils.data
 from ..transformer import Constants
 from typing import Any, List, Optional
 
-from utils.load_config import config
+from utils.load_config import config, Config
+# from Main import config
 
 class EventData(torch.utils.data.Dataset):
     """ Event stream dataset. """

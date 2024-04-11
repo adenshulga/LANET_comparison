@@ -8,6 +8,7 @@ def unpickle_file(path, type_of_split, data, prefix, encoding):
     tmp_path = os.path.join(path, prefix + type_of_split + '.pkl')
     with open(tmp_path, 'rb') as file:
         data[type_of_split] = pickle.load(file, encoding=encoding)[type_of_split]
+    
     return data
 
 def retrieve_dict(path, prefix, encoding):
@@ -65,7 +66,8 @@ def save_TCMBN_to_DNNTSP_format(dataset_name: str, path_to_pickled_files: str, r
     for key, value in splits.items(): 
         DNNTSP_dict[value] = create_DNNTSP_dict(TCMBN_unpickled_data[key])
     
-    # new_path = os.path.join('data', dataset_name)
+    # dataset_name = 'synthea'
+    # new_path = os.path.join('/app/All_models/dnntsp_data', dataset_name)
     # os.makedirs(new_path, exist_ok=True)
 
     # with open(os.path.join(new_path, dataset_name) + '.json', 'w') as file:
