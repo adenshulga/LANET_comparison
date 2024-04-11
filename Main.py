@@ -1,27 +1,18 @@
-import argparse
 import numpy as np
-import pickle
 import time
 import torch
-import torch.nn as nn
 import torch.optim as optim
-import torch.nn.functional as F
-from sklearn.metrics import roc_auc_score, f1_score, hamming_loss
 import os
 
-# from transformer.Models import Transformer
-# from lanet.LANET import TransformerEncoder
-from tqdm import tqdm
-from copy import deepcopy, copy
+from copy import deepcopy
 
 from utils.utils import set_random_seed, import_by_name, append_to_txt
-from utils.load_config import config, Config
-# from Main import config
+from utils.load_config import config
+import time
 
 
 def train(model, training_data, validation_data, test_data,  optimizer, scheduler, opt):
     """ Start training. """
-    """ TODO: write train epoch and eval epoch for each model"""
     best_auc_roc = 0
     impatient = 0 
     best_model = deepcopy(model.state_dict())
@@ -59,12 +50,9 @@ def train(model, training_data, validation_data, test_data,  optimizer, schedule
 
 
 
-        # if (valid_roc_auc - best_auc_roc ) < 5e-3:
         if ((best_auc_roc - valid_roc_auc) < opt.early_stop_thr) or abs(last_roc_auc - valid_roc_auc) < opt.early_stop_thr:
             impatient += 1
         else:
-            # best_auc_roc = valid_roc_auc
-            # best_model = deepcopy(model.state_dict())
             impatient = 0
         
         if best_auc_roc < valid_roc_auc:
@@ -86,9 +74,8 @@ def train(model, training_data, validation_data, test_data,  optimizer, schedule
 
 def main(config):
     """ Main function. 
-    Parse config file, create model, create dataloader for model
+    Parse config file, create model, create dataloader for model, train and save model
     """
-    # torch.cuda.empty_cache()
 
     opt = config
 
@@ -110,7 +97,6 @@ def main(config):
     trainloader, devloader, testloader = prepare_dataloader(opt)
 
     """ optimizer and scheduler """
-    # TODO: parse parameters from config
     optimizer = optim.Adam(filter(lambda x: x.requires_grad, model.parameters()),
                         opt.lr, betas=opt.betas, eps=opt.eps)
     scheduler = optim.lr_scheduler.StepLR(optimizer, opt.scheduler_step, gamma=opt.gamma)
@@ -133,22 +119,14 @@ def main(config):
     os.makedirs(model_save_path, exist_ok=True)
     torch.save(model.state_dict(), model_save_path + f'/run_{opt.seed}')
 
+    # Appends information about launch to utils/history.txt
     append_to_txt(f'---------------------------------------')
     append_to_txt(str(config))
     append_to_txt(f'Number of parameters: {num_params}')
     append_to_txt(f'Best validation roc auc on train: {best_roc_auc}')
 
 
-
-import time
 start = time.time()
-
-# # models = ['TCMBN', 'DNNTSP']
-# models = ['SFCNTSP']
-# datasets = ['synthea_preprocessed']
-# # datasets = ['synthea_preprocessed', 'defi_preprocessed']
-# # seeds = [1,2,3,4]
-# seeds = [2,3,4]
 
 def get_list(obj):
     if isinstance(obj, list):
@@ -166,10 +144,6 @@ if __name__ == '__main__':
             for seed in seeds:
                 config.modify_config(model_name=model, dataset_name=dataset, seed=seed)
                 main(config=config)
-
-
-# if __name__ == '__main__':
-#     main(config=config)
 
 end= time.time()
 print("total training time is {}".format(end-start))

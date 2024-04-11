@@ -2116,3 +2116,169 @@ Evaluated model with following config
 }
 
 Number of parameters: 739040
+
+---------------------------------------
+
+{'seed': '0' 
+, 'device': 'cuda:0' 
+, 'model_name': 'SFCNTSP' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '128' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'bias': 'False' 
+, 'embedding_channels': '384' 
+, 'dropout': '0.2' 
+, 'scheduler_t_max': '1000' 
+, 'alpha': '1.0' 
+, 'beta': '0.1' 
+, 'data_path': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'num_users': '3980' 
+, 'num_items': '169' 
+, 'max_seq_length': '41' 
+, 'model': 'SFCNTSP(
+  (dropout): Dropout(p=0.2, inplace=False)
+  (temporal_dependencies): TemporalDependencies(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=41, out_features=41, bias=False)
+  )
+  (element_relationships): ElementRelationships(
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (channel_correlations): ChannelCorrelations(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=384, out_features=384, bias=False)
+  )
+  (representations_fusing): RepresentationsFusing(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (projection): Linear(in_features=384, out_features=384, bias=True)
+    (leaky_relu_func): LeakyReLU(negative_slope=0.2)
+  )
+)' 
+}
+
+Number of parameters: 361873
+
+Best validation roc auc on train: 0.7117701849077179
+
+---------------------------------------
+
+Evaluated model with following config
+
+{'seed': '0' 
+, 'device': 'cuda:0' 
+, 'model_name': 'SFCNTSP' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '100' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.001' 
+, 'batch_size': '128' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'bias': 'False' 
+, 'embedding_channels': '384' 
+, 'dropout': '0.2' 
+, 'scheduler_t_max': '1000' 
+, 'alpha': '1.0' 
+, 'beta': '0.1' 
+, 'data_path': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'num_users': '3980' 
+, 'num_items': '169' 
+, 'max_seq_length': '41' 
+, 'model': 'SFCNTSP(
+  (dropout): Dropout(p=0.2, inplace=False)
+  (temporal_dependencies): TemporalDependencies(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=41, out_features=41, bias=False)
+  )
+  (element_relationships): ElementRelationships(
+    (dropout): Dropout(p=0.2, inplace=False)
+  )
+  (channel_correlations): ChannelCorrelations(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (sfcn): Linear(in_features=384, out_features=384, bias=False)
+  )
+  (representations_fusing): RepresentationsFusing(
+    (dropout): Dropout(p=0.2, inplace=False)
+    (projection): Linear(in_features=384, out_features=384, bias=True)
+    (leaky_relu_func): LeakyReLU(negative_slope=0.2)
+  )
+)' 
+}
+
+Number of parameters: 361873
+
+---------------------------------------
+
+{'seed': '0' 
+, 'device': 'cuda:0' 
+, 'model_name': 'DNNTSP' 
+, 'dataset_name': 'mimic3_preprocessed' 
+, 'cuda': '0' 
+, 'epoch': '150' 
+, 'early_stop_thr': '3e-05' 
+, 'patience': '15' 
+, 'lr': '0.05' 
+, 'batch_size': '32' 
+, 'eps': '1e-05' 
+, 'betas': '[0.9, 0.999]' 
+, 'scheduler_step': '10' 
+, 'gamma': '0.9' 
+, 'log': 'log.txt' 
+, 'data': 'tcmbn_data/mimic3_preprocessed/split_1/' 
+, 'num_types': '169' 
+, 'item_embed_dim': '256' 
+, 'loss_function': 'multi_label_soft_loss' 
+, 'weight_decay': '0' 
+, 'top_k': '[5, 10]' 
+, 'items_total': '169' 
+, 'model': 'temporal_set_prediction(
+  (item_embedding): Embedding(169, 256)
+  (stacked_gcn): stacked_weighted_GCN_blocks(
+    (0): weighted_GCN(
+      (gcns): ModuleList(
+        (0-1): 2 x weighted_graph_conv(
+          (linear): Linear(in_features=256, out_features=256, bias=True)
+        )
+      )
+      (relus): ModuleList(
+        (0-1): 2 x ReLU()
+      )
+      (bns): ModuleList(
+        (0-1): 2 x BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (masked_self_attention): masked_self_attention(
+    (Wq): Linear(in_features=256, out_features=256, bias=False)
+    (Wk): Linear(in_features=256, out_features=256, bias=False)
+    (Wv): Linear(in_features=256, out_features=256, bias=False)
+  )
+  (aggregate_nodes_temporal_feature): aggregate_nodes_temporal_feature(
+    (Wq): Linear(in_features=256, out_features=1, bias=False)
+  )
+  (global_gated_update): global_gated_update(
+    (item_embedding): Embedding(169, 256)
+  )
+  (fc_output): Linear(in_features=256, out_features=1, bias=True)
+)' 
+}
+
+Number of parameters: 373162
+
+Best validation roc auc on train: 0.6970549603297337

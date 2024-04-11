@@ -197,10 +197,10 @@
             "cuda": 0,
             "loss_function": "multi_label_soft_loss",
             "batch_size": 32,
-            "learning_rate": 0.001,
+            "lr": 5e-2,
             "weight_decay": 0,
             "top_k": [5, 10],
-            "epoch" : 150
+            "epoch" : 50
         }
     },
 

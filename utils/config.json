@@ -1,11 +1,11 @@
 {
-    "seed": 0,
+    "seed": [1,2,3],
     "device": 0,
-    "model_name":  "SFCNTSP",
+    "model_name":  ["SFCNTSP","DNNTSP"],
     "dataset_name": "mimic3_preprocessed",
     "cuda": 0,
 
-    "epoch": 100,
+    "epoch": 50,
 
     "early_stop_thr" : 3e-5,
 
