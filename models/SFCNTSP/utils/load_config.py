@@ -108,3 +108,5 @@ def get_users_items_num_and_max_seq_length(data_path):
 
 config.num_users, config.num_items, config.max_seq_length = get_users_items_num_and_max_seq_length(config.data_path)
 config.device = f'cuda:{get_attribute("cuda")}' if torch.cuda.is_available() and get_attribute("cuda") >= 0 else 'cpu'
+
+print(f'Config.num_items :{config.num_items}')

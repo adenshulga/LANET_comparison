@@ -1,11 +1,13 @@
 {
-    "seed": [1,2,3],
+    "seed": [1,2,3,4],
     "device": 0,
-    "model_name":  ["SFCNTSP","DNNTSP"],
-    "dataset_name": "mimic3_preprocessed",
+    "model_name": "LANET",
+    "dataset_name":  "synthea_preprocessed",
     "cuda": 0,
+    "ablation" : true,
+    "ablation_note" : 6,
 
-    "epoch": 50,
+    "epoch": 100,
 
     "early_stop_thr" : 3e-5,
 

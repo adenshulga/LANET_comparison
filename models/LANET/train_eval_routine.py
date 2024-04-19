@@ -57,59 +57,6 @@ def train_epoch(model, training_data, optimizer, opt):
 def eval_epoch(model, validation_data, opt):
     """ Epoch operation in evaluation phase. """
 
-    # model.eval()
-    
-    # total_ll = 0
-    # total_event = 0
-    # total_time_nll = 0
-    # pred_label = []
-    # true_label = []
-
-    # with torch.no_grad():
-    #     for batch in tqdm(validation_data, mininterval=2,
-    #                       desc='  - (Validation) ', leave=False):
-    #         """ prepare data """
-
-    #         event_time, time_gap, event_type = map(lambda x: x.to(opt.device), batch)
-
-    #         enc_out, non_pad_mask = model(event_type, event_time)
-            
-    #         a, b, c = enc_out[:, :-1, :].shape[0], enc_out[:,:-1,:].shape[1], enc_out[:,:-1,:].shape[2]
-            
-
-    #         """ backward """
-
-    #         # calculate P*(y_i+1) by mbn: 
-    #         log_loss_type = multilabel_celoss(enc_out[:, :-1, :].reshape(a*b, c), event_type[:, 1: ,:].reshape(a*b, model.num_types) )
-            
-    #         pred_type = (enc_out[:, :-1, :][(non_pad_mask[:,1:,:].repeat(1,1, model.num_types)==1)]).reshape(-1, model.num_types)
-            
-            
-    #         pred_label += list(pred_type.cpu().numpy())
-
-    #         true_type = (event_type[:, 1:, :][(non_pad_mask[:,1:,:].repeat(1,1, model.num_types)==1)]).reshape(-1, model.num_types)
-            
-                      
-    #         true_label += list(true_type.cpu().numpy())
-           
-            
-    #         #  log loss
-    #         loss = torch.sum(log_loss_type.reshape(a,b) * non_pad_mask[:,1:,0])
-
-    #         """ note keeping """
-    #         total_ll += loss.item()
-
-             
-    # roc_auc = roc_auc_score(y_true=true_label, y_score=pred_label, average=None)
-    
-    # print(" weighted roc_auc{}".format(roc_auc_score(y_true=true_label, y_score=pred_label, average='weighted')))
-    
-    
-    # roc_auc_mean = np.mean(roc_auc) 
-    
-    
-    # return total_ll, roc_auc_mean
-
     model.eval()
     
     pred_label = []

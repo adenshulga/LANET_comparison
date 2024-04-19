@@ -94,8 +94,6 @@ def evaluate(model, dataloader, opt, type) -> None:
 
             predict_data = model(g, nodes_feature, edges_weight, lengths, nodes, users_frequency)
 
-            # print(truth_data.sum(axis=0))
-            # print(predict_data)
             # predict_data shape (batch_size, baskets_num, items_total)
             # truth_data shape (batch_size, baskets_num, items_total)
             y_pred.append(predict_data.detach().cpu())
@@ -103,8 +101,6 @@ def evaluate(model, dataloader, opt, type) -> None:
 
         y_pred = torch.cat(y_pred, dim=0)
         y_true = torch.cat(y_true, dim=0)
-
-        print(y_true.sum(axis=0))
 
         save_to_csv(y_pred, f'pred_{type}', opt)
         save_to_csv(y_true, f'gt_{type}', opt)

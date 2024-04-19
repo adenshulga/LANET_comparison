@@ -22,7 +22,10 @@ def import_by_name(module_name, object_name):
 
 def save_to_csv(y, type, opt):
     'type is pred_test or pred_valid'
-    path_to_save = f'model_pred_and_gt/{opt.model_name}/{opt.dataset_name}/run_{opt.seed}/{type}'
+    if opt.ablation:
+        path_to_save = f'model_pred_and_gt/{opt.model_name}_ablation_{opt.ablation_index}/{opt.dataset_name}/run_{opt.seed}/{type}'
+    else:
+        path_to_save = f'model_pred_and_gt/{opt.model_name}/{opt.dataset_name}/run_{opt.seed}/{type}'
 
     os.makedirs(path_to_save, exist_ok=True)
     np.savetxt(os.path.join(path_to_save, 'data.csv'), y.numpy(), delimiter=',')

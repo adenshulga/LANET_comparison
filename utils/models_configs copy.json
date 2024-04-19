@@ -198,7 +198,7 @@
             "lr" : 1e-3 ,
             "batch_size" : 4,
             "scheduler_step" : 15,
-            "epoch" : 50
+            "epochs" : 70
         },
 
         "DC_preprocessed" : {

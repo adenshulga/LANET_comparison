@@ -5,6 +5,8 @@ log/
 __pycache__/
 .idea/
 
+models/VanillaTransformer
+
 .ipynb_checkpoints/
 
 model_pred_and_gt/*

@@ -21,6 +21,7 @@ def main(config):
 
     """ prepare model """
     create_model = import_by_name(f'models.{opt.model_name}.model_creation', 'create_model')
+
     model = create_model(opt)
     model.to(opt.device)
     opt.model = model
@@ -34,7 +35,11 @@ def main(config):
 
 
     """ evaluate on test set"""
-    model.load_state_dict( torch.load(f"saved_models/{opt.model_name}/{opt.dataset_name}/run_{opt.seed}") ) 
+    if config.ablation:
+        model.load_state_dict( torch.load(f"saved_models/{opt.model_name}_ablation_{config.ablation_note}/{opt.dataset_name}/run_{opt.seed}") ) 
+    else:
+        model.load_state_dict( torch.load(f"saved_models/{opt.model_name}/{opt.dataset_name}/run_{opt.seed}"))
+
     model.eval()
 
     num_params = sum(p.numel() for p in model.parameters() if p.requires_grad)

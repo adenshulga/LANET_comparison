@@ -29,7 +29,7 @@ class Config:
         if seed:
             self.seed = seed
 
-    def modify_config(self, model_name = None, dataset_name = None, seed = None) :
+    def modify_config(self, model_name = None, dataset_name = None, **kwargs) :
         abs_path = os.path.join(os.path.dirname(__file__), "config.json")
         with open(abs_path) as file:
             config = json.load(file)
@@ -59,8 +59,8 @@ class Config:
             setattr(self, key, model_settings[key])
         
         
-        if seed is not None:            
-            self.seed = seed
+        for key, value in kwargs.items():
+            setattr(self, key, value)
 
     def __str__(self) -> str:
         attributes = [f"'{key}': '{value}' \n" for key, value in self.__dict__.items()]

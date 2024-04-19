@@ -115,7 +115,11 @@ def main(config):
     model.load_state_dict(best_model)
     model.eval()
     # save the model
-    model_save_path = f"saved_models/{opt.model_name}/{opt.dataset_name}"
+    if config.ablation:
+        model_save_path = f"saved_models/{opt.model_name}_ablation_{config.ablation_note}/{opt.dataset_name}"
+    else:
+        model_save_path = f"saved_models/{opt.model_name}/{opt.dataset_name}"
+    
     os.makedirs(model_save_path, exist_ok=True)
     torch.save(model.state_dict(), model_save_path + f'/run_{opt.seed}')
 
@@ -138,12 +142,15 @@ model_names = deepcopy(get_list(config.model_name))
 dataset_names = deepcopy(get_list(config.dataset_name))
 seeds = deepcopy(get_list(config.seed))
 
+emb_sizes = [6,12,18,24,36,48]
+
 if __name__ == '__main__':
     for dataset in dataset_names:
         for model in model_names:
-            for seed in seeds:
-                config.modify_config(model_name=model, dataset_name=dataset, seed=seed)
-                main(config=config)
+            for emb_size in emb_sizes:
+                for seed in seeds:
+                    config.modify_config(model_name=model, dataset_name=dataset, seed=seed, emb_dim=emb_size, ablation_note=f'ebm_s_{emb_size}' )
+                    main(config=config)
 
 end= time.time()
 print("total training time is {}".format(end-start))
